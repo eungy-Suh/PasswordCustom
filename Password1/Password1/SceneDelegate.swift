@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Password
+//  Password1
 //
-//  Created by 서은지 on 2022/09/27.
+//  Created by 서은지 on 2022/09/28.
 //
 
 import UIKit

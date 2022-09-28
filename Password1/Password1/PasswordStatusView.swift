@@ -1,6 +1,6 @@
 //
 //  PasswordStatusView.swift
-//  Password
+//  Password1
 //
 //  Created by 서은지 on 2022/09/28.
 //
@@ -11,13 +11,13 @@ import UIKit
 class PasswordStatusView: UIView {
     let stackView = UIStackView()
     let criteriaLabel = UILabel()
-
+    
     let lengthCriteriaView = PasswordCriteriaView(text: "8-32 characters (no spaces)")
     let uppercaseCriteriaView = PasswordCriteriaView(text: "uppercase letter (A-Z)")
     let lowerCaseCriteriaView = PasswordCriteriaView(text: "lowercase (a-z)")
     let digitCriteriaView = PasswordCriteriaView(text: "digit (0-9)")
     let specialCharacterCriteriaView = PasswordCriteriaView(text: "special character (e.g. !@#$%^)")
-
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,7 +44,7 @@ extension PasswordStatusView {
         stackView.addArrangedSubview(lowerCaseCriteriaView)
         stackView.addArrangedSubview(digitCriteriaView)
         stackView.addArrangedSubview(specialCharacterCriteriaView)
-
+        
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .tertiarySystemFill
         
@@ -62,7 +62,7 @@ extension PasswordStatusView {
         lowerCaseCriteriaView.translatesAutoresizingMaskIntoConstraints = false
         digitCriteriaView.translatesAutoresizingMaskIntoConstraints = false
         specialCharacterCriteriaView.translatesAutoresizingMaskIntoConstraints = false
-
+        
     }
     func layout() {
         // Stack layout
@@ -72,22 +72,22 @@ extension PasswordStatusView {
             trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2),
             bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 2)
         ])
-
+        
     }
     private func makeCriteriaMessage() -> NSAttributedString {
         var plainTextAttributes = [NSAttributedString.Key: AnyObject]()
         plainTextAttributes[.font] = UIFont.preferredFont(forTextStyle: .subheadline)
         plainTextAttributes[.foregroundColor] = UIColor.secondaryLabel
-
+        
         var boldTextAttributes = [NSAttributedString.Key: AnyObject]()
         boldTextAttributes[.foregroundColor] = UIColor.label
         boldTextAttributes[.font] = UIFont.preferredFont(forTextStyle: .subheadline)
-
+        
         let attrText = NSMutableAttributedString(string: "Use at least ", attributes: plainTextAttributes)
         attrText.append(NSAttributedString(string: "3 of these 4 ", attributes: boldTextAttributes))
         attrText.append(NSAttributedString(string: "criteria when setting your password:", attributes: plainTextAttributes))
-
+        
         return attrText
-}
-
+    }
+    
 }
