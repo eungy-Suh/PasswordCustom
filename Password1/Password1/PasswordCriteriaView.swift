@@ -20,6 +20,7 @@ class PasswordCriteriaView: UIView {
     
     var isCriteriaMet: Bool = false {
         didSet {
+         //   print("----",isCriteriaMet)
             if isCriteriaMet {
                 imageView.image = checkmarkImage
             } else {
@@ -28,6 +29,7 @@ class PasswordCriteriaView: UIView {
         }
     }
     func reset() {
+        print(#function)
         isCriteriaMet = false
         imageView.image = circleImage
     }

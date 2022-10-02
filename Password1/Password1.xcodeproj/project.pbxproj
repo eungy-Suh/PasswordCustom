@@ -15,6 +15,7 @@
 		302E9C0B28E424710090A4D4 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E9C0A28E424710090A4D4 /* PasswordTextField.swift */; };
 		302E9C0E28E424BD0090A4D4 /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E9C0D28E424BD0090A4D4 /* PasswordCriteriaView.swift */; };
 		302E9C1028E424D70090A4D4 /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E9C0F28E424D70090A4D4 /* PasswordStatusView.swift */; };
+		30E86DCF28E9452500B2DF05 /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E86DCE28E9452500B2DF05 /* PasswordCriteria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		302E9C0A28E424710090A4D4 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		302E9C0D28E424BD0090A4D4 /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
 		302E9C0F28E424D70090A4D4 /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
+		30E86DCE28E9452500B2DF05 /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				302E9BF528E424040090A4D4 /* Password1 */,
+				302E9C1328E425240090A4D4 /* Set */,
 				302E9BF428E424040090A4D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +63,6 @@
 		302E9BF528E424040090A4D4 /* Password1 */ = {
 			isa = PBXGroup;
 			children = (
-				302E9C1328E425240090A4D4 /* Set */,
 				302E9BF828E424040090A4D4 /* SceneDelegate.swift */,
 				302E9BFA28E424040090A4D4 /* ViewController.swift */,
 				302E9C0A28E424710090A4D4 /* PasswordTextField.swift */,
@@ -74,6 +76,7 @@
 			children = (
 				302E9C0D28E424BD0090A4D4 /* PasswordCriteriaView.swift */,
 				302E9C0F28E424D70090A4D4 /* PasswordStatusView.swift */,
+				30E86DCE28E9452500B2DF05 /* PasswordCriteria.swift */,
 			);
 			name = PasswordStatusView;
 			sourceTree = "<group>";
@@ -87,6 +90,7 @@
 				302E9BF628E424040090A4D4 /* AppDelegate.swift */,
 			);
 			name = Set;
+			path = Password1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +168,7 @@
 				302E9C0E28E424BD0090A4D4 /* PasswordCriteriaView.swift in Sources */,
 				302E9C1028E424D70090A4D4 /* PasswordStatusView.swift in Sources */,
 				302E9C0B28E424710090A4D4 /* PasswordTextField.swift in Sources */,
+				30E86DCF28E9452500B2DF05 /* PasswordCriteria.swift in Sources */,
 				302E9BF928E424040090A4D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
