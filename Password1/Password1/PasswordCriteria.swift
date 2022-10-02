@@ -28,6 +28,9 @@ struct PasswordCriteria {
     static func digitMet(_ text: String) -> Bool {
         text.range(of: "[0-9]", options: .regularExpression) != nil
     }
-    
+    static func specialCharacterMet(_ text: String) -> Bool {
+        // regex escaped @:?!()$#,.\/
+        return text.range(of: "[@:?!()$#,./\\\\]+", options: .regularExpression) != nil
+    }
     
 }
